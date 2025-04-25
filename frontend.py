@@ -37,8 +37,9 @@ allow_web_search=st.checkbox("Allow Web Search")
 
 user_query=st.text_area("Enter your query: ", height=150, placeholder="Ask Anything!")
 
-API_URL="http://127.0.0.1:9999/chat"
-# API_URL = "https://python-ai-2.onrender.com/chat"
+# API_URL="http://127.0.0.1:9999/chat"
+API_URL = "https://python-ai-1-al2j.onrender.com/chat"
+
 if st.button("Ask Agent!"):
     if user_query.strip():
         #Step2: Connect with backend via URL
