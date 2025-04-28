@@ -5,7 +5,7 @@ load_dotenv()
 
 import streamlit as st
 
-st.set_page_config(page_title="Anshul Agentic UI", layout="centered")
+st.set_page_config(page_title="Agicent Agentic UI", layout="centered")
 st.title("Agentic Chatbot Agents")
 st.write("Create and Interact with the AI Agents!")
 st.markdown(
