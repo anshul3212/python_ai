@@ -1,0 +1,12 @@
+name: Trigger Render Deploy
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # every 30 minutes
+
+jobs:
+  redeploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger redeploy on Render
+        run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
