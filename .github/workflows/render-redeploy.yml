@@ -1,14 +1,14 @@
-name: Trigger Render Deploy
+# name: Trigger Render Deploy
 
-on:
-  workflow_dispatch:
+# on:
+#   workflow_dispatch:
 
-  schedule:
-     - cron: '*/5 * * * *'  # every 5 minutes
+#   schedule:
+#      - cron: '*/5 * * * *'  # every 5 minutes
 
-jobs:
-  redeploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Trigger redeploy on Render
-        run: curl -X POST https://api.render.com/deploy/srv-d05o1k3uibrs73ft4m30?key=zQAFpQFpp94
+# jobs:
+#   redeploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Trigger redeploy on Render
+#         run: curl -X POST https://api.render.com/deploy/srv-d05o1k3uibrs73ft4m30?key=zQAFpQFpp94
